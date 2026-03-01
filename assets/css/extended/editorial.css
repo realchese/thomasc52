@@ -1,0 +1,312 @@
+/* Editorial Theme Override for Thomas Chan */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400&display=swap');
+
+:root {
+  --main-width: 720px;
+  --header-height: auto;
+  --gap: 24px;
+  --content-gap: 28px;
+  --radius: 0;
+  --theme: #fff;
+  --entry: #fff;
+  --primary: #1a1a1a;
+  --secondary: #555;
+  --tertiary: #e8e8e8;
+  --border: #ddd;
+  --code-bg: #f5f2ef;
+}
+
+/* ─── Base ─── */
+body {
+  font-family: 'Source Sans 3', 'Georgia', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--primary);
+  background: #fafaf7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Header ─── */
+.nav {
+  max-width: var(--main-width);
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 12px;
+  margin-bottom: 0;
+}
+
+#menu a {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+#menu a:hover {
+  color: #c0392b;
+}
+
+.logo a {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--primary) !important;
+}
+
+/* ─── Home Info ─── */
+.first-entry {
+  border: none !important;
+  min-height: auto;
+  padding: 48px 0 32px;
+  position: relative;
+}
+
+.first-entry::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #c0392b;
+  margin-top: 24px;
+}
+
+.first-entry .entry-header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.first-entry .entry-content {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+  margin-top: 4px;
+}
+
+/* Social icons - editorial style */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: var(--secondary) !important;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #c0392b !important;
+}
+
+/* ─── Post List ─── */
+.post-entry {
+  border: none;
+  border-bottom: 1px solid #e0ddd8;
+  padding: 28px 0;
+  margin: 0;
+  background: transparent;
+}
+
+.post-entry:first-of-type {
+  border-top: 1px solid #e0ddd8;
+}
+
+.post-entry:hover {
+  background: transparent;
+  transform: none;
+}
+
+.post-entry .entry-header h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.post-entry .entry-header h2 a {
+  color: inherit;
+}
+
+.post-entry .entry-header h2 a:hover {
+  color: #c0392b;
+}
+
+.post-entry .entry-content {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin-top: 4px;
+}
+
+.post-entry .post-meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* ─── Single Post ─── */
+.post-header {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0ddd8;
+}
+
+.post-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.post-meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #999;
+}
+
+.post-description {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--secondary);
+  margin-top: 16px;
+}
+
+.post-content {
+  font-family: 'Source Sans 3', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #2a2a2a;
+}
+
+.post-content p {
+  margin-bottom: 1.5em;
+}
+
+.post-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 2.5em;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.01em;
+}
+
+.post-content h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #c0392b;
+  padding-left: 24px;
+  margin: 2em 0;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.post-content a {
+  color: #c0392b;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.post-content a:hover {
+  border-bottom-color: #c0392b;
+}
+
+/* Drop cap on first paragraph */
+.post-content > p:first-of-type::first-letter {
+  font-family: 'Playfair Display', Georgia, serif;
+  float: left;
+  font-size: 3.8em;
+  line-height: 0.8;
+  padding-right: 10px;
+  padding-top: 6px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* ─── Footer ─── */
+.footer {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #aaa;
+  border-top: 1px solid #e0ddd8;
+}
+
+/* ─── Post Navigation ─── */
+.paginav {
+  border-top: 1px solid #e0ddd8;
+  margin-top: 48px;
+  padding-top: 24px;
+}
+
+.paginav a {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.paginav a:hover {
+  color: #c0392b;
+}
+
+/* ─── About page ─── */
+.page-header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+/* ─── Misc ─── */
+::selection {
+  background: rgba(192, 57, 43, 0.15);
+}
+
+/* Remove PaperMod shadows and rounded corners */
+.main .post-entry,
+.first-entry {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Archive/list pages */
+.archive-month {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
